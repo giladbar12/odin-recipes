@@ -51,6 +51,10 @@ body{
       font-size: 150% ;
   }
   
+
+a {
+  text-decoration: none;
+}
   .recipes {
     width: 33%;
     margin: 0 auto;

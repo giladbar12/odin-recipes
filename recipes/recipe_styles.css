@@ -16,10 +16,10 @@ p {
 li.star::before {
   content: ""; 
   position: absolute; 
-  top: min(.75vw,7.5px); 
+  top: max(min(.75vw,7.5px),5px); 
   left: 0; 
-  height: min(1.5vw, 15px); 
-  width: min(1.5vw, 15px); 
+  height: max(min(1.5vw, 15px),10px); 
+  width: max(min(1.5vw, 15px),10px); 
   background: #949bf9;
   text-align: center; 
   transform: rotate(0deg);
@@ -28,10 +28,10 @@ li.star::before {
 li.star::after {
   content: ""; 
   position: absolute; 
-  top: min(.75vw,7.5px); 
+  top: max(min(.75vw,7.5px),5px); 
   left: 0; 
-  height: min(1.5vw, 15px); 
-  width: min(1.5vw, 15px);
+  height: max(min(1.5vw, 15px),10px); 
+  width: max(min(1.5vw, 15px),10px);
   background: #f9dd94;
   transform: rotate(45deg);
 }

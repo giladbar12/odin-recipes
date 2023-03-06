@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "recipe_styles.css">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='recipe_styles.css') }}">
         <title>Brownies Recipe</title>
     </head>
     <body>
@@ -12,18 +12,18 @@
             
             <div class = "recipe_title_page">
                 <div class = "flex ">
-                    <a href="../index.html">
-                        <img class = "odin-title" src = "../images/odin.svg"  >
+                    <a href="/">
+                        <img class = "odin-title" src = "{{ url_for('static', filename='images/odin.svg') }}"  >
                     </a>
                 </div>
                 <div id = "flex">
-                    <a href="../index.html">
+                    <a href="/">
                         <h1> Brownies </h1>
                     </a>
                 </div>
                 <div class = "flex">
-                    <a href="../index.html">
-                        <img class = "odin-title"  src = "../images/odin.svg"  >
+                    <a href="/">
+                        <img class = "odin-title"  src = "{{ url_for('static', filename='images/odin.svg') }}"  >
                     </a>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <section class = "recipe">
                 <section class = "description">
                     <div>
-                        <img src = "../images/brownies.jpg" class = "recipe_img"></img>
+                        <img src ="{{ url_for('static', filename='images/brownies.jpg') }}" class = "recipe_img"></img>
                         <div class="description_text">These brownies always turn out!</div>
                     </div>
                 </section>

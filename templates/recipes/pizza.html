@@ -4,25 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "recipe_styles.css">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='recipe_styles.css') }}">
         <title>Pizza Recipe</title>
     </head>
     <body>
         <section class="page">   
             <div class = "recipe_title_page">
-                <div style = " margin-right:1%;padding-right:0;"class = "flex ">
-                    <a href="../index.html">
-                        <img class = "odin-title" src = "../images/odin.svg"  >
+                <div class = "flex ">
+                    <a href="/">
+                        <img class = "odin-title" src = "{{ url_for('static', filename='images/odin.svg') }}"  >
                     </a>
                 </div>
                 <div id = "flex">
-                    <a href="../index.html">
-                        <h1 style = "margin-top: 20%;font-size: max(6vw,36px);;"> Pizza </h1>
+                    <a href="/">
+                        <h1> Pizza </h1>
                     </a>
                 </div>
-                <div style= " margin-left:5%"class = "flex">
-                    <a href="../index.html">
-                        <img class = "odin-title"  src = "../images/odin.svg"  >
+                <div class = "flex">
+                    <a href="/">
+                        <img class = "odin-title"  src = "{{ url_for('static', filename='images/odin.svg') }}"  >
                     </a>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <section class = "recipe">
                 <section class = "description">
                     <div>
-                        <img src = "../images/pizza.jpg" class = "recipe_img"></img>
+                        <img src ="{{ url_for('static', filename='images/pizza.jpg') }}" class = "recipe_img"></img>
                         <div class="description_text">
                             A traditional Inspired by the pizza at Bar Del Corso, this Pizza features tomato 
                             sauce, mozzarella, and basil, with just a hint of sea salt.
